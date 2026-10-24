@@ -1,0 +1,105 @@
+table,column,description,source
+ball_by_ball,match_id,Match identifier used by Cricsheet. Usually the Cricinfo match id but not guaranteed to be. Joins to match_info and match_players.,Cricsheet
+ball_by_ball,season,"Season of the match, such as 2018 or 2011/12.",Cricsheet
+ball_by_ball,start_date,First day of the match. Multi-day matches show only the first day here; match_info has every day.,Cricsheet
+ball_by_ball,venue,"Ground where the match was played, such as Old Trafford. Blank if not recorded.",Cricsheet
+ball_by_ball,innings,Innings number of the delivery. Super overs continue the count (3 and up in a limited-overs match).,Cricsheet
+ball_by_ball,ball,"Over and ball in cricket notation: 23.5 is the 5th ball of the 24th over. Stored as a number, so the 10th delivery of an over (35.10) reads as 35.1. Use over_no and delivery_in_over instead.",Cricsheet
+ball_by_ball,batting_team,Team batting on this delivery.,Cricsheet
+ball_by_ball,bowling_team,Team bowling on this delivery.,Cricsheet
+ball_by_ball,striker,Batter who faced the delivery.,Cricsheet
+ball_by_ball,non_striker,Batter at the bowler's end.,Cricsheet
+ball_by_ball,bowler,Bowler of the delivery.,Cricsheet
+ball_by_ball,runs_off_bat,Runs scored by the batter off this ball. 0 if none.,Cricsheet
+ball_by_ball,extras,Total extras conceded on this ball. 0 if none.,Cricsheet
+ball_by_ball,wides,Wides conceded on this ball. Blank if none.,Cricsheet
+ball_by_ball,noballs,No-balls conceded on this ball. Blank if none.,Cricsheet
+ball_by_ball,byes,Byes conceded on this ball. Blank if none.,Cricsheet
+ball_by_ball,legbyes,Leg-byes conceded on this ball. Blank if none.,Cricsheet
+ball_by_ball,penalty,Penalty runs conceded on this ball. Blank if none.,Cricsheet
+ball_by_ball,wicket_type,"How a batter was out on this ball: bowled, caught, caught and bowled, lbw, stumped, run out, retired hurt, hit wicket, obstructing the field, hit the ball twice, handled the ball or timed out. Blank if no wicket.",Cricsheet
+ball_by_ball,player_dismissed,Batter dismissed on this ball. Blank if no wicket.,Cricsheet
+ball_by_ball,other_wicket_type,"Type of a second dismissal on the same ball, for example a retirement hurt alongside a wicket. Blank otherwise.",Cricsheet
+ball_by_ball,other_player_dismissed,Batter dismissed in a second dismissal on the same ball. Blank otherwise.,Cricsheet
+ball_by_ball,match_type,"Format of the match: T20 (international), ODI, TEST or IPL. Copied from match_info so you can filter deliveries without a join.",TigZig
+ball_by_ball,over_no,Over number taken from the ball text (35 in 35.10). An exact integer.,TigZig
+ball_by_ball,delivery_in_over,"Delivery number within the over taken from the ball text (10 in 35.10). It counts wides and no-balls, so it can run past 6. For the legal-ball count use actual_delivery.",TigZig
+ball_by_ball,actual_delivery,"Legal-ball count within the over. A delivery after a wide or no-ball repeats the previous number.",Cricsheet
+ball_by_ball,non_boundary,"True when a 4 or 6 was scored without reaching the boundary, for example all run or overthrows. Blank otherwise.",Cricsheet
+ball_by_ball,fielder_1,"First fielder involved in a dismissal, such as the catcher. Blank if not known or no dismissal.",Cricsheet
+ball_by_ball,fielder_2,Second fielder involved in a dismissal. Filled only for some run outs.,Cricsheet
+ball_by_ball,fielder_3,Third fielder involved in a run out. Rarely filled.,Cricsheet
+ball_by_ball,gender,male or female. Copied from match_info.,Cricsheet
+ball_by_ball,team_type,international or club (the IPL is club). Copied from match_info.,Cricsheet
+match_info,match_id,Match identifier used by Cricsheet. One row per match. Joins to ball_by_ball and match_players.,Cricsheet
+match_info,match_type,"Format of the match: T20 (international), ODI, TEST or IPL.",TigZig
+match_info,team1,First team listed in the Cricsheet file. The order is as filed and does not mean home or batting first.,TigZig
+match_info,team2,Second team listed in the Cricsheet file.,TigZig
+match_info,team1_icc_type,"Our classification of team1 from ICC membership lists: Full Member, Associate-ODI (an associate with ODI status for that gender) or Associate. Blank for club sides such as IPL franchises. Not part of Cricsheet.",TigZig
+match_info,team2_icc_type,Same as team1_icc_type for team2.,TigZig
+match_info,gender,male or female.,Cricsheet
+match_info,season,"Season of the match, such as 2018 or 2011/12.",Cricsheet
+match_info,start_date,First day of the match.,Cricsheet
+match_info,venue,Ground where the match was played.,Cricsheet
+match_info,city,"City of the venue, such as Dubai. Blank if not recorded.",Cricsheet
+match_info,event,"Competition or series the match was part of, if any.",Cricsheet
+match_info,match_number,"Match number within the event, if any.",Cricsheet
+match_info,toss_winner,Team that won the toss.,Cricsheet
+match_info,toss_decision,Choice made by the toss winner: bat or field.,Cricsheet
+match_info,winner,"Winning team. Blank for a draw, a no result or a tie (see outcome). A tie settled by a super over or bowl-out also leaves it blank; the side that won is in eliminator or bowl_out.",Cricsheet
+match_info,winner_runs,"Winning margin in runs, when the match was won by runs or by an innings and runs.",Cricsheet
+match_info,winner_wickets,"Winning margin in wickets, when the match was won by wickets.",Cricsheet
+match_info,player_of_match1,Player of the match. When the award was shared the second name is in player_of_match2.,TigZig
+match_info,umpire1,First on-field umpire listed.,TigZig
+match_info,umpire2,Second on-field umpire listed.,TigZig
+match_info,tv_umpire1,"TV umpire, if recorded.",TigZig
+match_info,reserve_umpire1,"Reserve umpire, if recorded.",TigZig
+match_info,match_referee,"Match referee, if recorded.",Cricsheet
+match_info,outcome,"Result when no team won: draw, no result or tie. Blank when there is a winner.",Cricsheet
+match_info,method,"How a curtailed or unusual result was decided, such as D/L (Duckworth-Lewis, possibly Stern) or Awarded. Blank for a normal result.",Cricsheet
+match_info,eliminator,Winner of an eliminator super over used to settle a tie.,Cricsheet
+match_info,bowl_out,Winner of a bowl-out used to settle a tied T20.,Cricsheet
+match_info,winner_innings,1 when the match was won by an innings (winner_runs then holds the extra runs).,Cricsheet
+match_info,super_over,"Innings numbers that were super overs, comma-separated (for example 3,4). Blank if none.",Cricsheet
+match_info,declared,"Innings numbers that were declared, comma-separated (for example 1,3). Blank if none.",Cricsheet
+match_info,overs,"Scheduled overs per innings for the format, such as 20 or 50.",Cricsheet
+match_info,target_overs,"Overs available for the chase when a target was set, in cricket notation (40.2 is 40 overs and 2 balls). Do not sum or average it.",Cricsheet
+match_info,target_runs,Runs needed when a target was set (for example after a rain revision).,Cricsheet
+match_info,match_type_number,"Running number of this match within its type, for example the 2404th Test.",Cricsheet
+match_info,team_type,international or club (the IPL is club).,Cricsheet
+match_info,balls_per_over,"Balls expected per over, normally 6.",Cricsheet
+match_info,toss_uncontested,"true when the toss was not contested and was awarded to one side. Mostly County Championship 2016 to 2019, so rare here.",Cricsheet
+match_info,player_of_match2,Second player of the match when the award was shared.,TigZig
+match_info,umpire3,"Third umpire listed, usually a substitution during the match.",TigZig
+match_info,umpire4,Fourth umpire listed.,TigZig
+match_info,tv_umpire2,Second TV umpire listed.,TigZig
+match_info,reserve_umpire2,Second reserve umpire listed.,TigZig
+match_info,end_date,Last day of the match. Rest days mean end_date minus start_date is not the number of playing days; count match_dates for that.,TigZig
+match_info,match_dates,"Every playing day of the match, comma-separated, as filed by Cricsheet.",TigZig
+match_players,match_id,Match identifier. Joins to ball_by_ball and match_info.,Cricsheet
+match_players,person_name,Name of the person as filed for that match.,Cricsheet
+match_players,identifier,"Cricsheet register id of the person. Follow a player across matches with this id, since two people can share a name. Joins to people.",Cricsheet
+match_players,team,Team the person played for. Blank for officials.,Cricsheet
+match_players,role,"player, umpire, tv_umpire, reserve_umpire or match_referee. Comma-separated when one person held two roles. Blank when Cricsheet names the person without a role, mostly substitute fielders.",TigZig
+people,identifier,Cricsheet register id. One row per person. Joins to match_players.,Cricsheet
+people,name,Name as used in the Cricsheet data. Not unique: two people can share a name.,Cricsheet
+people,unique_name,A version of the name that is unique across the register.,Cricsheet
+people,key_bcci,Id of the person on the BCCI site.,Cricsheet
+people,key_bcci_2,Second BCCI id where one exists.,Cricsheet
+people,key_bigbash,Id on the Big Bash League site.,Cricsheet
+people,key_cricbuzz,Id on Cricbuzz.,Cricsheet
+people,key_cricheroes,Id on CricHeroes.,Cricsheet
+people,key_crichq,Id on CricHQ.,Cricsheet
+people,key_cricinfo,Id on ESPNcricinfo.,Cricsheet
+people,key_cricinfo_2,Second ESPNcricinfo id where one exists.,Cricsheet
+people,key_cricinfo_3,Third ESPNcricinfo id where one exists.,Cricsheet
+people,key_cricingif,Id on Cricingif.,Cricsheet
+people,key_cricketarchive,Id on CricketArchive.,Cricsheet
+people,key_cricketarchive_2,Second CricketArchive id where one exists.,Cricsheet
+people,key_cricketworld,Id on Cricket World.,Cricsheet
+people,key_nvplay,Id on NV Play.,Cricsheet
+people,key_nvplay_2,Second NV Play id where one exists.,Cricsheet
+people,key_opta,Id on Opta.,Cricsheet
+people,key_opta_2,Second Opta id where one exists.,Cricsheet
+people,key_pulse,Id on Pulse.,Cricsheet
+people,key_pulse_2,Second Pulse id where one exists.,Cricsheet

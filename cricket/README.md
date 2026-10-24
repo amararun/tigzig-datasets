@@ -11,7 +11,8 @@ Documentation:
 - For people: https://www.tigzig.com/apis/database
 - For AI agents: https://db-mcp.tigzig.com/openapi.json
 - Query the same cricket data with SQL on Postgres or DuckDB, no download needed: [tigzig.com/apis/database](https://www.tigzig.com/apis/database).
-- Column meanings: most ball-by-ball columns follow [Cricsheet's CSV format notes](https://cricsheet.org/format/csv_ashwin/). Player identifiers follow the [Cricsheet register](https://cricsheet.org/register/).
+- Column descriptions: [cricket_columns.csv](../dictionaries/cricket_columns.csv), one row per column, marked as Cricsheet's definition or ours. Cricsheet's own notes go further: the [CSV format notes](https://cricsheet.org/format/csv_ashwin/) and the [player register](https://cricsheet.org/register/).
+- Guides: [14 things that trip people up](https://www.tigzig.com/post/cricket-database-14-things-that-trip-people-up-sep2026), [how to identify one delivery](https://www.tigzig.com/agents-faq/how-do-i-identify-one-delivery-in-ball-by-ball-cricket-data) and [worked SQL queries](https://www.tigzig.com/post/db-mcp-cricket-sql-queries-aug2026).
 
 | Dataset | What it holds | Updated | Files |
 |---|---|---|---|
