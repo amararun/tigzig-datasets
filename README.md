@@ -10,13 +10,9 @@ Free data downloads from TigZig: Indian mutual funds and SIF, global macro and m
 | [VIGIL](vigil/) | Indian listed-company signals from NSE filings: credit ratings, insider trades, pledges, takeovers, encumbrance, surveillance flags and related party transactions. | 11 |
 | [CRICKET](cricket/) | Ball-by-ball cricket from Cricsheet: Tests, ODIs, T20s and the IPL, men's and women's, with match info and a player registry. | 12 |
 
-## How to use the files
+## How to get the files
 
-Every dataset page links straight to its files. Formats include CSV, Parquet and single-file SQLite or DuckDB databases. Parquet files support HTTP range reads, so DuckDB, pyarrow or polars can query them in place:
-
-```sql
-SELECT count(*) FROM read_parquet('https://api.tigzig.com/cricket/v1/download/ball_by_ball.parquet');
-```
+Every dataset page links straight to its files: CSV, Parquet and single-file SQLite or DuckDB databases. Each link is a plain download, so a browser, curl, wget or a Python script can fetch it. Parquet files also support HTTP range reads, so engines such as DuckDB or polars can query them in place without downloading the whole file.
 
 - Browse every dataset: https://www.tigzig.com/downloads
 - The same catalog as JSON, for scripts and AI agents: https://api.tigzig.com/downloads

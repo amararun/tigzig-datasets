@@ -4,6 +4,11 @@ Global macro, credit, valuation and market series (FDIC, NCUA, FRED, NY Fed, MoS
 
 Browse on tigzig.com: https://www.tigzig.com/downloads#app-tremor · JSON for this group: https://api.tigzig.com/downloads/tremor
 
+Documentation:
+
+- For people: https://www.tigzig.com/apis/tremor
+- For AI agents: https://api.tigzig.com/tremor/v1/openapi.json
+
 | Dataset | What it holds | Updated | Files |
 |---|---|---|---|
 | **India bank credit by sector (RBI)**<br>[Docs](https://www.tigzig.com/tremor/india-credit-methodology) | Outstanding bank credit by economic sector in India, monthly, from the RBI sectoral deployment of bank credit releases, in crore rupees. One row per sector per reporting date, long format. Source: Reserve Bank of India, Sectoral Deployment of Bank Credit. | monthly | [CSV](https://api.tigzig.com/downloads/tremor_india_credit.csv) · [Sector dictionary](https://api.tigzig.com/downloads/tremor_india_credit_dictionary.csv) · [Column dictionary](https://api.tigzig.com/downloads/tremor_india_credit_columns.csv) |

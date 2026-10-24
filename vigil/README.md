@@ -4,6 +4,11 @@ Indian listed-company signals from NSE filings: credit ratings, insider trades, 
 
 Browse on tigzig.com: https://www.tigzig.com/downloads#app-vigil · JSON for this group: https://api.tigzig.com/downloads/vigil
 
+Documentation:
+
+- For people: https://www.tigzig.com/apis/vigil
+- For AI agents: https://api.tigzig.com/vigil/v1/openapi.json
+
 | Dataset | What it holds | Updated | Files |
 |---|---|---|---|
 | **BRSR data quality flags**<br>[Docs](https://www.tigzig.com/vigil/brsr-data-quality) | One row per BRSR value that VIGIL has flagged, corrected or excluded, for each company's current filing year: values filed in the wrong unit, consolidated figures, placeholder values and internal mismatches, with the action taken and the evidence. Source: TIGZIG checks of SEBI BRSR XBRL filings on NSE. | irregular | [CSV](https://api.tigzig.com/downloads/vigil_brsr_dq_flags.csv) · [Column dictionary](https://api.tigzig.com/downloads/vigil_brsr_dq_flags_columns.csv) |

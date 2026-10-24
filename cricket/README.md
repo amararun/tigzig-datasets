@@ -6,6 +6,13 @@ Source: Cricsheet (cricsheet.org).
 
 Browse on tigzig.com: https://www.tigzig.com/downloads#app-cricket · JSON for this group: https://api.tigzig.com/downloads/cricket
 
+Documentation:
+
+- For people: https://www.tigzig.com/apis/database
+- For AI agents: https://db-mcp.tigzig.com/openapi.json
+- Query the same cricket data with SQL on Postgres or DuckDB, no download needed: [tigzig.com/apis/database](https://www.tigzig.com/apis/database).
+- Column meanings: most ball-by-ball columns follow [Cricsheet's CSV format notes](https://cricsheet.org/format/csv_ashwin/). Player identifiers follow the [Cricsheet register](https://cricsheet.org/register/).
+
 | Dataset | What it holds | Updated | Files |
 |---|---|---|---|
 | **Every delivery, all formats**<br>[Docs](https://www.tigzig.com/apis/database) | One row per ball across Test, ODI and T20 internationals, men's and women's, plus the IPL. Filter on the gender and team_type columns. | twice daily | [CSV.gz](https://api.tigzig.com/cricket/v1/download/ball_by_ball.csv.gz) · [Parquet](https://api.tigzig.com/cricket/v1/download/ball_by_ball.parquet) |

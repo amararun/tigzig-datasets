@@ -6,6 +6,11 @@ Source: AMFI (Association of Mutual Funds in India).
 
 Browse on tigzig.com: https://www.tigzig.com/downloads#app-sif · JSON for this group: https://api.tigzig.com/downloads/sif
 
+Documentation:
+
+- For people: https://www.tigzig.com/apis/sif
+- For AI agents: https://api.tigzig.com/mf/v1/openapi.json
+
 | Dataset | What it holds | Updated | Files |
 |---|---|---|---|
 | **SIF average AUM by quarter**<br>[Docs](https://sif.tigzig.com/README.txt) | One row per SIF scheme per quarter: AMFI's quarterly average AUM, in Rs lakhs as filed and in Rs crore. | weekly | [csv](https://api.tigzig.com/downloads/sif_aaum.csv) · [parquet](https://api.tigzig.com/downloads/sif_aaum.parquet) |

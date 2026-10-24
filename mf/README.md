@@ -4,6 +4,11 @@ Indian mutual funds from AMFI: daily NAV for every scheme since 2006, scheme det
 
 Browse on tigzig.com: https://www.tigzig.com/downloads#app-mf · JSON for this group: https://api.tigzig.com/downloads/mf
 
+Documentation:
+
+- For people: https://www.tigzig.com/apis/mf-nav
+- For AI agents: https://api.tigzig.com/mf/v1/openapi.json
+
 | Dataset | What it holds | Updated | Files |
 |---|---|---|---|
 | **Mutual fund portfolio holdings / composition (selected equity funds)**<br>[Docs](https://www.tigzig.com/mfpro/composition-methodology) | Monthly portfolio holdings of 24 Indian equity mutual funds across large cap, mid cap, small cap, flexi cap, focused and value categories, as disclosed by the fund houses. Quarter-ends June, September and December 2025, then every month from January 2026 (July, August, October and November 2025 are not loaded). One row per line of the fund house file per month-end, so a fund-month can have several rows under one isin where lines are grouped. Every fund-month adds up to the fund house's own grand total (net assets), apart from two PPFAS months where the file's typed grand total differs from its own section sub-totals (see the validation page). asset_group and asset_subgroup classify each line (equity, foreign stocks, cash, money market, mutual fund units, REITs and InvITs, debt, others). Codes starting SYN and IN9999999999 are placeholders for grouped lines (TREPS, a fund house cash line, CDs, CPs, T-bills, G-secs, receivables and margins); codes starting DUM are shares awaiting listing. asset_subgroup marks shares awaiting listing (IPO allotments and newly demerged companies) for the months before they list, whether they carry a DUM code or their final ISIN. Each fund house values them itself, so the value can differ between fund houses until they list. Futures that a fund house lists after its grand total are outside its net assets and are not in this file. There is no sector column. Source: Fund houses (monthly portfolio disclosures); ISIN reference from NSDL and NSE. | monthly | [CSV](https://api.tigzig.com/downloads/mf_portfolio_holdings.csv) · [Column dictionary](https://api.tigzig.com/downloads/mf_portfolio_holdings_columns.csv) |
