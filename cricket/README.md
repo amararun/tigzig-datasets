@@ -1,5 +1,7 @@
 # CRICKET
 
+![CRICKET, refreshed daily](cover.png)
+
 Ball-by-ball cricket from Cricsheet: Tests, ODIs, T20s and the IPL, men's and women's, with match info and a player registry.
 
 Source: Cricsheet (cricsheet.org).
