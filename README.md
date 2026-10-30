@@ -19,6 +19,11 @@ Every dataset page links straight to its files: CSV, Parquet and single-file SQL
 - Browse every dataset: https://www.tigzig.com/downloads
 - The same catalog as JSON, for scripts and AI agents: https://api.tigzig.com/downloads
 
+## Also on Kaggle and Hugging Face
+
+- [IPL & International Cricket Ball-by-Ball, Daily (Kaggle)](https://www.kaggle.com/datasets/amarharolikar/ipl-international-cricket-ball-by-ball)
+- [IPL and International Cricket Ball-by-Ball Data, Updated Daily (Hugging Face)](https://huggingface.co/datasets/amarharolikar/ipl-international-cricket-ball-by-ball)
+
 ## Terms
 
 Each group page names its source and links to its terms. Every dataset is provided as is, with no guarantee of accuracy, completeness or availability.
