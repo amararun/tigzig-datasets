@@ -1,6 +1,6 @@
 # TigZig datasets
 
-**Most datasets refresh daily or several times a day.** Each group page shows every dataset's schedule. Last checked 13 Nov 2026.
+**Most datasets refresh daily or several times a day.** Each group page shows every dataset's schedule. Last checked 14 Nov 2026.
 
 Free data downloads from TigZig: Indian mutual funds and SIF, global macro and markets, Indian listed-company signals, and ball-by-ball cricket. No sign-up is needed. The files are hosted on tigzig.com and this repository is the index.
 
