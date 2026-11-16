@@ -1,6 +1,6 @@
 # TigZig datasets
 
-**Most datasets refresh daily or several times a day.** Each group page shows every dataset's schedule. Last checked 15 Nov 2026.
+**Most datasets refresh daily or several times a day.** Each group page shows every dataset's schedule. Last checked 16 Nov 2026.
 
 Free data downloads from TigZig: Indian mutual funds and SIF, global macro and markets, Indian listed-company signals, and ball-by-ball cricket. No sign-up is needed. The files are hosted on tigzig.com and this repository is the index.
 
@@ -11,6 +11,7 @@ Free data downloads from TigZig: Indian mutual funds and SIF, global macro and m
 | [TREMOR](tremor/) | Global macro, credit, valuation and market series (FDIC, NCUA, FRED, NY Fed, MoSPI, RBI, OECD, ECB and others), plus data behind the TREMOR tools. | 24 |
 | [VIGIL](vigil/) | Indian listed-company signals from NSE filings: credit ratings, insider trades, pledges, takeovers, encumbrance, surveillance flags and related party transactions. | 11 |
 | [CRICKET](cricket/) | Ball-by-ball cricket from Cricsheet: Tests, ODIs, T20s and the IPL, men's and women's, with match info and a player registry. | 12 |
+| [NEWS](news/) | Headlines and short summary lines from 60+ public RSS feeds of news publishers, central banks and agencies, each scored for relevance to a macro and credit analyst. | 1 |
 
 ## How to get the files
 
