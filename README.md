@@ -1,6 +1,6 @@
 # TigZig datasets
 
-**Most datasets refresh daily or several times a day.** Each group page shows every dataset's schedule. Last checked 19 Nov 2026.
+**Most datasets refresh daily or several times a day.** Each group page shows every dataset's schedule. Last checked 20 Nov 2026.
 
 Free data downloads from TigZig: Indian mutual funds and SIF, global macro and markets, Indian listed-company signals, and ball-by-ball cricket. No sign-up is needed. The files are hosted on tigzig.com and this repository is the index.
 
@@ -9,7 +9,7 @@ Free data downloads from TigZig: Indian mutual funds and SIF, global macro and m
 | [MFPRO](mf/) | Indian mutual funds from AMFI: daily NAV for every scheme since 2006, scheme details and data-quality notes. | 8 |
 | [SIF (Specialized Investment Funds)](sif/) | Indian Specialized Investment Funds from AMFI: daily NAV for every SIF scheme since the category began in October 2025, the scheme master, quarterly average AUM, scheme details and a list of open data issues. | 5 |
 | [TREMOR](tremor/) | Global macro, credit, valuation and market series (FDIC, NCUA, FRED, NY Fed, MoSPI, RBI, OECD, ECB and others), plus data behind the TREMOR tools. | 24 |
-| [VIGIL](vigil/) | Indian listed-company signals from NSE filings: credit ratings, insider trades, pledges, takeovers, encumbrance, surveillance flags and related party transactions. | 11 |
+| [VIGIL](vigil/) | Indian listed-company signals from NSE filings: credit ratings, insider trades, pledges, takeovers, encumbrance, surveillance flags and related party transactions. | 12 |
 | [CRICKET](cricket/) | Ball-by-ball cricket from Cricsheet: Tests, ODIs, T20s and the IPL, men's and women's, with match info and a player registry. | 12 |
 | [NEWS](news/) | Headlines and short summary lines from 60+ public RSS feeds of news publishers, central banks and agencies, each scored for relevance to a macro and credit analyst. | 1 |
 
